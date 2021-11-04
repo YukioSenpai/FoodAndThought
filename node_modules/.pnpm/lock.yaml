@@ -1,12 +1,16 @@
 lockfileVersion: 5.3
 
 specifiers:
+  husky: ^7.0.4
+  is-ci: ^3.0.1
   vite-plugin-checker: ^0.3.4
   vite-plugin-svgr: ^0.4.0
   vite-react-jsx: ^1.1.2
   vite-tsconfig-paths: ^3.3.17
 
 dependencies:
+  husky: 7.0.4
+  is-ci: 3.0.1
   vite-plugin-checker: 0.3.4
   vite-plugin-svgr: 0.4.0
   vite-react-jsx: 1.1.2
@@ -505,6 +509,10 @@ packages:
       fsevents: 2.3.2
     dev: false
 
+  /ci-info/3.2.0:
+    resolution: {integrity: sha512-dVqRX7fLUm8J6FgHJ418XuIgDLZDkYcDFTeL6TA2gt5WlIZUQrrH6EZrNClwT/H0FateUsZkGIOPRrLbP+PR9A==}
+    dev: false
+
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -662,6 +670,12 @@ packages:
       function-bind: 1.1.1
     dev: false
 
+  /husky/7.0.4:
+    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
+    engines: {node: '>=12'}
+    hasBin: true
+    dev: false
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -679,6 +693,13 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       binary-extensions: 2.2.0
+    dev: false
+
+  /is-ci/3.0.1:
+    resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
+    hasBin: true
+    dependencies:
+      ci-info: 3.2.0
     dev: false
 
   /is-core-module/2.8.0:

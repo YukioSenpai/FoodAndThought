@@ -4,7 +4,10 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,scss,md,graphql}\"",
+    "lint:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,scss,md,graphql}\"",
+    "test": "jest"
   },
   "dependencies": {
     "react": "^17.0.0",
@@ -15,6 +18,7 @@
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react": "^1.0.0",
     "typescript": "^4.3.2",
-    "vite": "^2.6.4"
+    "vite": "^2.6.4",
+    "prettier": "^2.3.2"
   }
 }
