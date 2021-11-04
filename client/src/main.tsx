@@ -1,3 +1,4 @@
+import { AuthorizedApolloProvider } from 'AuthorizedApolloProvider'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './App'
@@ -5,7 +6,9 @@ import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthorizedApolloProvider>
+      <App />
+    </AuthorizedApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
