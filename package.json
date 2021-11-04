@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"vite-plugin-checker": "^0.3.4",
+		"vite-plugin-svgr": "^0.4.0",
+		"vite-react-jsx": "^1.1.2",
+		"vite-tsconfig-paths": "^3.3.17"
+	}
+}
