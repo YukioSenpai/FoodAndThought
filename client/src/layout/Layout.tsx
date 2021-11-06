@@ -6,11 +6,10 @@ import { css } from './layout.styles'
 const { Content } = Layouts
 
 type LayoutProps = {
-  title?: string
   children: ReactNode
 }
 
-export const Layout = ({ title, children }: LayoutProps) => (
+export const Layout = ({ children }: LayoutProps) => (
   <>
     <Header />
     <Layouts className={css.layout}>

@@ -1,5 +1,6 @@
 import { Layout } from 'antd'
 import { FC } from 'react'
+import { AvatarDropDown } from './avatar/AvatarDropdown'
 import { css } from './header.styles'
 
 const { Header: Head } = Layout
@@ -9,8 +10,8 @@ const { Header: Head } = Layout
 export const Header: FC = () => (
   <Head className={css.header}>
     {/* <Link href={Routes.Home()}> */}
-    <img alt="logo" src="/logo.png" className={css.logo} />
+    <img alt="logo" src="/logo2.png" className={css.logo} />
     {/* </Link> */}
-    {/* <AvatarDropDown /> */}
+    <AvatarDropDown />
   </Head>
 )

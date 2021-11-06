@@ -4,13 +4,13 @@ export const css = stylesheet({
   header: {
     display: 'flex',
     justifyContent: 'space-between',
-    color: '#fff',
     backgroundColor: '#F5F5F9',
+    height: '4rem',
+    alignItems: 'center',
   },
   logo: {
-    width: '3rem',
-    height: '3rem',
+    width: '9rem',
+    height: '9rem',
     cursor: 'pointer',
-    marginTop: '.5rem',
   },
 })

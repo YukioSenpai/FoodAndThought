@@ -8,7 +8,8 @@
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,scss,md,graphql}\"",
     "lint:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,scss,md,graphql}\"",
     "test": "jest",
-    "codegen": "graphql-codegen --config codegen.yml && yarn run lint:fix"
+    "codegen": "graphql-codegen --config codegen.yml && yarn run lint:fix",
+    "build:css": "lessc --js src/styles/antd-theme.less src/styles/antd-theme.css"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
