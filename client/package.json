@@ -7,15 +7,27 @@
     "serve": "vite preview",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,scss,md,graphql}\"",
     "lint:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,scss,md,graphql}\"",
-    "test": "jest"
+    "test": "jest",
+    "codegen": "graphql-codegen --config codegen.yml && yarn run lint:fix"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@apollo/client": "^3.4.16",
-    "graphql": "^16.0.1",
+    "antd": "^4.16.13",
+    "fp-ts": "^2.11.5",
+    "graphql": "^15.6.0",
+    "io-ts": "^2.2.16",
+    "io-ts-types": "^0.5.16",
+    "localforage": "^1.10.0",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "typestyle": "^2.1.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "1.21.3",
+    "@graphql-codegen/typescript": "1.21.1",
+    "@graphql-codegen/typescript-operations": "1.17.15",
+    "@graphql-codegen/typescript-react-apollo": "2.2.3",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react": "^1.0.0",

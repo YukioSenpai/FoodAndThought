@@ -3,3 +3,9 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# Generated css
+src/styles/antd-theme.css
+
+# Generated ts
+src/generate/graphql-frontend.ts

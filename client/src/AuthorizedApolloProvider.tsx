@@ -1,4 +1,5 @@
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
+import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from '@apollo/client'
+import { env } from 'core/env'
 import React from 'react'
 
 interface Props {
@@ -6,18 +7,12 @@ interface Props {
 }
 
 export const AuthorizedApolloProvider: React.FC<Props> = ({ children }) => {
-  //   const errorLink = onError(response => {
-  //     notifyGraphQLErrors(response)
-
-  //     const { graphQLErrors, networkError } = response
-  //     networkError && console.log(`[Network error]: ${networkError}`)
-  //     graphQLErrors?.forEach?.(({ message, locations, path }) =>
-  //       console.log(`[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`)
-  //     )
-  //   })
+  const httpLink = createHttpLink({
+    uri: env.serverEndpoint,
+  })
 
   const apolloClient = new ApolloClient({
-    uri: 'http://localhost:4000',
+    link: httpLink,
     cache: new InMemoryCache(),
     connectToDevTools: true,
   })
