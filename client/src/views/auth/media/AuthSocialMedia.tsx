@@ -8,23 +8,17 @@ interface Props {
   isNew: boolean
 }
 
-export const AuthSocialMedia: React.FC<Props> = ({ isNew }) => (
-  <Space direction="vertical" className={css.space}>
-    {/* <Link href="/api/auth/google"> */}
-    <Button className={css.button}>
-      <Space>
-        <FcGoogle className={css.logo} />
-        <span>{isNew ? 'Signup with google' : 'Connect with google'}</span>
-      </Space>
-    </Button>
-    {/* </Link> */}
-    {/* <Link href="/api/auth/facebook">
-        <Button className={css.button}>
-          <Space>
-            <FaFacebook className={css.logo} color="#3c5a99" />
-            <span>{isNew ? msg.newFb : msg.fb}</span>
-          </Space>
-        </Button>
-      </Link> */}
-  </Space>
-)
+export const AuthSocialMedia: React.FC<Props> = ({ isNew }) => {
+  // const [googleMutation] = useGoogleMutation()
+
+  return (
+    <Space direction="vertical" className={css.space}>
+      <Button className={css.button}>
+        <Space>
+          <FcGoogle className={css.logo} />
+          <span>{isNew ? 'Signup with google' : 'Connect with google'}</span>
+        </Space>
+      </Button>
+    </Space>
+  )
+}

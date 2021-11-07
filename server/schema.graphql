@@ -55,6 +55,7 @@ enum SortOrder {
 }
 
 type User {
+  avatar: String
   email: String!
   id: Int!
   name: String
@@ -70,4 +71,8 @@ input UserCreateInput {
 input UserUniqueInput {
   email: String
   id: Int
+}
+
+input googleLoginInput {
+  idToken: String!
 }
