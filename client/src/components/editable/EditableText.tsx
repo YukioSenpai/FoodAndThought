@@ -1,7 +1,7 @@
 import { Input } from 'antd'
+import { Spin } from 'components/spin/Spin'
 import React, { useCallback, useEffect, useState } from 'react'
 import { css } from './editable.styles'
-import { Spin } from 'app/components/spin/Spin'
 
 type EditingState = 'read' | 'write' | 'loading'
 

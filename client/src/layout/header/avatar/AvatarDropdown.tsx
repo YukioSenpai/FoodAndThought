@@ -1,6 +1,7 @@
 import { UserOutlined } from '@ant-design/icons'
 import { Avatar, Dropdown, Menu } from 'antd'
 import React, { useState } from 'react'
+import { AuthModal } from 'views/auth/AuthModal'
 import { css } from './avatarDropdown.styles'
 
 export const AvatarDropDown: React.FC = () => {
@@ -56,12 +57,12 @@ export const AvatarDropDown: React.FC = () => {
         <Avatar icon={<UserOutlined />} className={css.avatar} size="default" />
         {/* )} */}
       </Dropdown>
-      {/* <AuthModal
+      <AuthModal
         visible={visible}
         setVisible={setVisible}
         isConnect={isConnect}
         setIsConnect={setIsConnect}
-      /> */}
+      />
     </>
   )
 }

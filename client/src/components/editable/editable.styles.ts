@@ -1,5 +1,5 @@
-import { stylesheet } from 'typestyle'
 import { textInput } from 'styles/input'
+import { stylesheet } from 'typestyle'
 
 export const css = stylesheet({
   editableText: {
