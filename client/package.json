@@ -21,9 +21,13 @@
     "io-ts": "^2.2.16",
     "io-ts-types": "^0.5.16",
     "localforage": "^1.10.0",
+    "monocle-ts": "^2.3.11",
+    "newtype-ts": "^0.3.4",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-icons": "^4.3.1",
+    "swr": "^1.0.1",
+    "typed-intl": "^1.0.3",
     "typestyle": "^2.1.0"
   },
   "devDependencies": {

@@ -51,18 +51,20 @@ export const AvatarDropDown: React.FC = () => {
           </Menu>
         }
       >
-        {/* {currentUserQuery.data && currentUserQuery.data.avatar ? (
+        <div>
+          {/* {currentUserQuery.data && currentUserQuery.data.avatar ? (
           <Avatar src={currentUserQuery.data.avatar} className={css.avatar} size="default" />
         ) : ( */}
-        <Avatar icon={<UserOutlined />} className={css.avatar} size="default" />
-        {/* )} */}
+          <Avatar icon={<UserOutlined />} className={css.avatar} size="default" />
+          {/* )} */}
+          <AuthModal
+            visible={visible}
+            setVisible={setVisible}
+            isConnect={isConnect}
+            setIsConnect={setIsConnect}
+          />
+        </div>
       </Dropdown>
-      <AuthModal
-        visible={visible}
-        setVisible={setVisible}
-        isConnect={isConnect}
-        setIsConnect={setIsConnect}
-      />
     </>
   )
 }
