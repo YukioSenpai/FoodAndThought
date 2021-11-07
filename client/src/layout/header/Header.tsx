@@ -12,6 +12,8 @@ export const Header: FC = () => (
     {/* <Link href={Routes.Home()}> */}
     <img alt="logo" src="/logo2.png" className={css.logo} />
     {/* </Link> */}
-    <AvatarDropDown />
+    <div>
+      <AvatarDropDown />
+    </div>
   </Head>
 )

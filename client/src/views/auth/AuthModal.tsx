@@ -3,7 +3,7 @@ import React from 'react'
 import { css } from './authModal.styles'
 import LoginForm from './login/LoginForm'
 import { AuthSocialMedia } from './media/AuthSocialMedia'
-import SignupForm from './signup/SignupForm'
+import { SignupForm } from './signup/SignupForm'
 
 interface Props {
   visible: boolean
