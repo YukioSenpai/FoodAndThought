@@ -3,7 +3,7 @@ import { stylesheet } from 'typestyle'
 
 export const css = stylesheet({
   container: {
-    marginBottom: '2.4rem',
+    marginBottom: '1.4rem',
     $nest: {
       '.ant-legacy-form-item-label': {
         fontWeight: 600,

@@ -28,12 +28,10 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSuccess, style }) => {
     <div>
       <Form
         onFinish={async values => {
-          console.log('A')
           try {
             const res = await signupMutation({
               variables: { email: values.email, password: values.password },
             })
-            console.log('B')
             localStorage.setItem('token', res.data?.signup?.token || '')
             onSuccess?.()
             location.reload()
